@@ -1,0 +1,1039 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebHazard InternetDesign</title>
+	
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="simplegrid.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style10.css" />
+  <script src="snap.svg-min.js"></script>
+
+
+  <!--CHRIS COLLIER FORM STYLE-->
+
+<style type="text/css">
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#Field1, #Field2 {
+  float: left;
+}
+
+body {
+  padding: 20px 15%;
+}
+form header {
+  margin: 50px 0 20px 0; 
+}
+form header div {
+  font-size: 100%;
+  color: white;
+}
+form header h2 {
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+  font-size: 90%;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+  legend {
+    text-align: right;
+  }
+}
+</style>
+
+ <!-- ===== EIND STYLE VOOR CONTACTPAGINA ===== --> 
+
+  <style>
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+
+   .fadeIn2>p {
+      font-size: 16px;
+    }
+
+    .content p {
+      text-align: left;
+    }
+
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+
+    .scrolldown {
+      margin-top: 70px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .foto {
+      width: 100px;
+      height: 100px;
+      background-color: grey;
+      margin: 0 auto;
+    }
+
+    .naam {
+      margin-top: 120px;
+    }
+
+
+   /* #saveForm {
+    width: 100px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+
+    form {
+      z-index: 10000;
+      position: fixed;
+    }*/
+
+
+
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+    
+    h2 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main h1 {
+      padding:150px 50px;
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+   
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+    
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+    
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+    
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+
+    .reload:hover{
+      background: #444;
+    }
+
+    .btn {
+      width: 200px;
+      color: rgb(255, 255, 255);
+      border: 4px solid rgb(0, 0, 0);
+      background: rgba(3, 3, 3, 0.75);
+      margin: 0 auto;
+    }
+
+    
+
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #444;
+    }
+
+    .knop {
+      margin: 25px auto;
+    }
+
+  
+    
+    
+    
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: right;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+      font-size: 15px; /*was 12*/
+      color: #000;
+      -webkit-transition: all 100ms ease-in-out; /* was 500ms */
+      -moz-transition: all 100ms ease-in-out;
+      -o-transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in-out;
+    }
+    .back:hover {
+      color: black;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .back>a {
+      color: #686868;
+    }
+
+    .back>a:hover {
+      text-decoration: underline;
+      color: black;
+    }
+    
+   
+
+    header h1 { letter-spacing: 2px;}
+
+    .main section .page_container {
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      max-width: 1024px; /*Was 950*/
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+    
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+
+    /*=============ACHTERGRONDKLEUR PAGINA'S======================*/
+    
+    .main section.page1 {
+      /*background: url(img/blue.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+      background-color: #4c66a4;
+      top: 15%;
+    }
+
+    .main section.page2 {
+      background: #1A78C9;
+    }
+    .main section.page3 {
+      background: #8AA88E;
+    }
+
+    .main section.page4 {
+      background: #1A78C9 ;
+    }
+
+    .main section.page5 {
+      background: #4c66a4;
+    }
+
+    /*===================================*/
+
+    
+
+    .main section .page_container .btns {
+      clear: both;
+      float: left;
+      text-align: center;
+      width: 435px;
+    }
+    .main section .page_container .btns a{
+      text-align: center;
+    }
+
+    /*===================================*/
+
+
+    .main section.page1 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      line-height: 160%;
+    }
+
+    .main section.page1 p {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      line-height: 160%;
+      clear: both;
+      font-size: 120%;
+    }
+
+    .viewing-page-1 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: white;
+      }
+
+     .back a {
+      background: rgba(0, 0, 0, 0);
+      color: white;
+      }
+    
+    
+    .main section.page2 .page_container {
+      margin-top: -150px;
+      overflow: hidden;
+    }
+    .main section.page2 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page2 h2 {
+      color: white;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .viewing-page-2 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: white;
+      }
+    
+    .main section.page3 .page_container {
+      overflow: hidden;
+      margin-top: -110px;
+      /*right: -285px;*/
+    }
+    .main section.page3 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page3 h2 {
+      color: white;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 21px;
+    }
+
+    .main section.page3 p {
+      color: white;
+    }
+
+    .viewing-page-3 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: white;
+      }
+
+      #watwijdoen {
+        margin-top: -100px;
+        color: white;
+      }
+
+    .main section.page4 .page_container {
+      margin-top: -40px;
+      overflow: hidden;
+    }
+    .main section.page4 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page4 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .viewing-page-4 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: white;
+      }
+
+     .main section.page5 .page_container {
+      margin-top: -40px;
+      overflow: hidden;
+    }
+    .main section.page5 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page5 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .viewing-page-5 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      }
+    
+    
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    /*body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }*/
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+
+
+/*============================================*/
+
+
+    @keyframes fadeIn{
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+    }
+
+    .fadeIn {
+      animation-name: fadeIn;
+      animation-duration: 25s;
+      animation-fill-mode: forwards;
+    }
+
+    .fadeIn2 {
+      animation-name: fadeIn;
+      animation-duration: 18s;
+      animation-fill-mode: forwards;
+      z-index: 5000;
+    }
+
+     @keyframes fadeOut{
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+    }
+
+    .fadeOut {
+      animation-name: fadeOut;
+      animation-duration: 25s;
+      animation-fill-mode: forwards;
+    }
+
+    #escher {
+      margin-bottom: 40px;
+      margin-left: 5px;
+      z-index: -500;
+    }
+
+    .arrow-down {
+      width: 0; 
+      height: 0; 
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      
+      border-top: 20px solid #f00;
+    }
+
+    /*=========================================*/
+
+
+
+    
+
+    /* Smartphones (landscape) ----------- */
+    @media only screen 
+    and (max-width : 321px) {
+      div .back, header {
+        display: none
+      }
+      #webhazard {
+        color: red;
+      }
+      .main section.page1 h1 {
+        margin-top: -50px;
+      }
+      .main section.page2 h1 {
+        margin-top: -50px;
+      }
+    }
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen 
+    and (max-width : 360px) {
+
+
+      #webhazard {
+        position: relative;
+        margin-top: -120px;
+        color: red;
+      }
+      .back {
+        display: none;
+      }
+    } /* end MQ portrait*/
+
+</style>
+
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600
+      });
+		});
+	</script>
+
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+
+      
+	    <section class="page1">
+        <a name="page1"></a>
+        <div class="page_container">
+
+          <div class="grid grid-pad">
+              <div class="col-1-1">
+                  <div class="content">
+    
+                      <h1 id="webhazard"  style="color: white">WebHazard InternetDesign</h1>
+                      <h2  style="color: white">Flexibel design voor een vaste prijs.</h2>
+                      <p  style="color: white">Door de opkomst van mobiel internet is een website die er alleen goed uitziet op een desktop niet langer meer voldoende. <br>Steeds meer mensen doen hun aankopen en zoeken informatie via hun smartphone of tablet. Daarom is het belangrijk dat uw website er op alle apparaten goed uit ziet en functioneert.</p>
+                        <p  style="color: white">Wij kunnen u daar bij helpen.</p>
+                        <p><button id="trigger-overlay" type="button">Menu</button></p>
+                        
+                      <!--<div><img src="img/beeldschermen.gif"></div>-->
+
+                      <!--<div class="scrolldown"><img src="img/scrolldown.png"></div>-->
+
+                      <div class="encircle  animated">
+                            <div class="arrow"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          
+          
+
+          <!--<img id="pijl" src="img/arrow.svg">-->
+
+          <!--<p class="arrow-down" style="margin: 0 auto;"></p>-->
+
+          <!--<img class="bounce animated" src="img/escherpijl.png" style="width:50px; height:40px; margin-top: 50px;">-->
+
+          
+
+
+        </div> <!-- /page_container -->
+      </section>
+
+      <section class="page2" id="page2">
+        <a name="page3"></a>
+        <div class="page_container">
+            <div class="grid grid-pad">
+              <div class="col-1-1">
+                  <div class="content">
+                      <h1>Wat wij doen</h1>
+                      <h2>Ontwerp - Hosting - Onderhoud</h2>
+                  </div>
+              </div>
+            </div>
+            <div class="grid grid-pad" id="watwijdoen">
+              <div class="col-1-3">
+                <div class="content">
+                  <h2 class="naam">Ontwerp</h2>
+                  <p>Na een eerste ontmoeting waarin wij uw wensen en de mogelijkheden bespreken, gaan we meteen aan de slag.
+                    Op een privé-internetadres zetten wij een eerste volledig werkende versie van uw website. Nadat u deze op uw gemak heeft kunnen bekijken volgt een tweede gesprek waarin de door u gewenste veranderingen doorgenomen worden.
+                    Wij doen dit alles op basis van de door u aangeleverde foto's en teksten. Mocht u aanvullende foto's en teksten nodig hebben, dan kunnen wij daar eveneens voor zorgen.</p>
+                </div>
+              </div>
+              <div class="col-1-3">
+                <div class="content">
+                  <h2 class="naam">Hosting</h2>
+                  <p>Mocht u nog niet over een eigen webadres en host beschikken, dan kunnen wij dat voor u regelen. 
+                    Voor ongeveer 20 euro per jaar beschikt u over een eigen webadres, een aantal daaraan gekoppelde e-mailadressen, een goede spamfilter en vrijwel ongelimiteerd dataverkeer. Ook zorgen wij er voor dat uw nieuwe website door Google en andere zoekmachines goed gevonden kan worden. U bepaalt de zoektermen, wij doen de rest.</p>
+                </div>
+              </div>
+              <div class="col-1-3">
+                <div class="content">
+                  <h2 class="naam">Onderhoud</h2>
+                  <p>Natuurlijk wilt u later nog dingen aan uw website kunnen veranderen of toevoegen. Geen probleem: u mailt ons uw wensen door en wij passen uw website aan. Veel internetbureau's werken met zgn. CMS systemen als Wordpress en Joomla.
+                  Wij zijn daar geen voorstander van. Deze systemen zijn vaak onnodig zwaar en laden langzaam op mobiel en tablet.
+                 Om de laadtijd van uw website zo kort mogelijk te houden moeten ook de afbeeldingen optimaal gecomprimeerd zijn. Wij doen dat graag voor u.</p>
+                </div>
+              </div>
+            </div>
+
+             <div class="encircle bounce animated">
+                <div class="arrow"></div>
+            </div>
+
+        </div>
+      </section>
+	    
+	    <section class="page3">
+        <a name="page2"></a>
+	      <div class="page_container">
+          <h1>Wie wij zijn</h1>
+          
+
+            <div class="grid grid-pad">
+              <div class="col-1-3">
+                <div class="content">
+                  <h2 class="naam">Tom Bakkers</h2>
+                  <div class="foto"></div>
+                  <h3>Designer en front-end developer</h3>
+                  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+                </div>
+              </div>
+              <div class="col-1-3">
+                <div class="content">
+                  <h2 class="naam">Mireille Mertens</h2>
+                  <div class="foto"></div>
+                  <H3>UX-expert en fotografe</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <div class="col-1-3">
+                <div class="content">
+                  <h2 class="naam">Klaas Knoester</h2>
+                  <div class="foto"></div>
+                  <h3>Klantmanager en boekhouder</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="encircle bounce animated">
+                <div class="arrow"></div>
+           </div>
+
+         </div> <!-- /pagecontainer -->
+      </section>
+
+
+      
+
+
+	    
+	    <section class="page4" id="page4">
+        <a name="page4"></a>
+	      <div class="page_container">
+          <h1>Wat wij deden</h1>
+          <h2>Bekijk onderstaande websites en vel uw oordeel:</h2>
+          <p>&nbsp;</p>
+          <div class="knop">
+            <a class="reload btn" href="http://degroenen.nl">De Groenen</a>
+          </div>
+          <div class="knop">
+            <a class="reload btn" href="http://cafe-casanova.nl">Café Casanova</a>
+          </div>
+          <div class="knop">
+            <a class="reload btn" href="http://webhazard.nl/TO-RELAX-NEW/index.html">To Relax</a>
+          </div>
+          <div class="knop">
+            <a class="reload btn" href="http://ravi-p.eu">Ravi P</a>
+          </div>
+
+           <div class="encircle bounce animated">
+                <div class="arrow"></div>
+          </div>
+
+  	    </div>
+      </section>
+
+      
+
+      <section class="page5">
+        <div class="page_container">
+          <a name="page5"></a>
+          <h1>Contact</h1>
+          <h2>U kunt ons bellen: 06-42027955</h2>
+          <h2><a href="contact_form.html" style="color: white; text-decoration: underline;">Of ons een e-mail sturen.</a></h2>
+
+          <div class="devices">
+
+            <div class="macbook animated bounceInDown">
+              <div class="screen">
+                <div class="camera"></div>
+                <div class="display"></div>
+              </div>
+              <div class="base">
+                <div class="notch"></div>
+              </div>
+            </div>
+
+            <div class="iphone animated bounceInDown">
+              <div class="body">
+                <div class="camera"></div>
+                <div class="earpiece"></div>
+                <div class="power"></div>
+                <div class="volume_up"></div>
+                <div class="volume_down"></div>
+                <div class="display"></div>
+              </div>
+              <div class="line"></div>
+            </div>
+
+            <div class="ipad animated bounceInDown">
+              <div class="body">
+                <div class="button"></div>
+                <div class="display"></div>
+              </div>
+              <div class="line"></div>
+            </div>
+              
+          </div> <!--Eind animatie-->
+
+
+
+          <!--CHRIS COLLIER RESPONSIVE FORM-->
+
+          <!--<form action="mailer.php" method="post">
+
+          <header>
+            <h2>Stuur ons een e-mail:</h2>
+            <div>Wij nemen zo spoedig mogelijk contact met je op.</div>
+          </header>
+          
+          <div>
+            <label class="desc" id="Field1" for="Field1">Naam:</label>
+            <div>
+              <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+          </div>
+            
+          <div>
+            <label class="desc" id="Field2" for="Field2">
+              Emailadres:
+            </label>
+            <div>
+              <input id="Field2" name="Field2" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+           </div>
+          </div>
+            
+          <div>
+            <label class="desc" id="Field3" for="Field3">
+              Bericht:
+            </label>
+          
+            <div>
+              <textarea id="Field3" name="Field3" spellcheck="false" rows="10" cols="50" tabindex="4"></textarea>
+            </div>
+          </div>
+            
+          
+          <div>
+            <div>
+              <input id="saveForm" name="saveForm" type="submit" value="Verstuur">
+            </div>
+          </div>
+          
+        </form>-->
+
+                </div><!--???-->
+      </section> <!--/Section 5 - contactpagina -->
+
+      <!--<section class="page6">
+        <a name="page6"></a>
+        <div class="page_container">
+          <h1>Reservepagina</h1>
+          <p>©WebHazard InternetDesign</p>
+          
+        </div>
+      </section>-->
+
+    </div> <!-- /Main ?? -->
+
+        <div> <!--Navigatiebalk-->
+        <!--<div class="back">&nbsp;|&nbsp;<a href="#page1">HOME</a>&nbsp;|&nbsp;<a href="#page2">OVER ONS</a>&nbsp;|&nbsp;<a href="#page3">DIENSTEN</a>&nbsp;|&nbsp;<a href="#page4">PORTFOLIO</a>&nbsp;|&nbsp;<a href="#page5">CONTACT</a>&nbsp;|&nbsp;
+        </div>--> <!--Eind Navigatiebalk-->
+
+    
+  
+  <!-- open/close -->
+    <div class="overlay overlay-boxes" style="z-index: 100;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="101%" viewBox="0 0 1440 806" preserveAspectRatio="none">
+        <path d="m0.005959,200.364029l207.551124,0l0,204.342453l-207.551124,0l0,-204.342453z"/>
+        <path d="m0.005959,400.45401l207.551124,0l0,204.342499l-207.551124,0l0,-204.342499z"/>
+        <path d="m0.005959,600.544067l207.551124,0l0,204.342468l-207.551124,0l0,-204.342468z"/>
+        <path d="m205.752151,-0.36l207.551163,0l0,204.342437l-207.551163,0l0,-204.342437z"/>
+        <path d="m204.744629,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+        <path d="m204.744629,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+        <path d="m204.744629,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+        <path d="m410.416046,-0.36l207.551117,0l0,204.342437l-207.551117,0l0,-204.342437z"/>
+        <path d="m410.416046,200.364029l207.551117,0l0,204.342453l-207.551117,0l0,-204.342453z"/>
+        <path d="m410.416046,400.45401l207.551117,0l0,204.342499l-207.551117,0l0,-204.342499z"/>
+        <path d="m410.416046,600.544067l207.551117,0l0,204.342468l-207.551117,0l0,-204.342468z"/>
+        <path d="m616.087402,-0.36l207.551086,0l0,204.342437l-207.551086,0l0,-204.342437z"/>
+        <path d="m616.087402,200.364029l207.551086,0l0,204.342453l-207.551086,0l0,-204.342453z"/>
+        <path d="m616.087402,400.45401l207.551086,0l0,204.342499l-207.551086,0l0,-204.342499z"/>
+        <path d="m616.087402,600.544067l207.551086,0l0,204.342468l-207.551086,0l0,-204.342468z"/>
+        <path d="m821.748718,-0.36l207.550964,0l0,204.342437l-207.550964,0l0,-204.342437z"/>
+        <path d="m821.748718,200.364029l207.550964,0l0,204.342453l-207.550964,0l0,-204.342453z"/>
+        <path d="m821.748718,400.45401l207.550964,0l0,204.342499l-207.550964,0l0,-204.342499z"/>
+        <path d="m821.748718,600.544067l207.550964,0l0,204.342468l-207.550964,0l0,-204.342468z"/>
+        <path d="m1027.203979,-0.36l207.550903,0l0,204.342437l-207.550903,0l0,-204.342437z"/>
+        <path d="m1027.203979,200.364029l207.550903,0l0,204.342453l-207.550903,0l0,-204.342453z"/>
+        <path d="m1027.203979,400.45401l207.550903,0l0,204.342499l-207.550903,0l0,-204.342499z"/>
+        <path d="m1027.203979,600.544067l207.550903,0l0,204.342468l-207.550903,0l0,-204.342468z"/>
+        <path d="m1232.659302,-0.36l207.551147,0l0,204.342437l-207.551147,0l0,-204.342437z"/>
+        <path d="m1232.659302,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+        <path d="m1232.659302,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+        <path d="m1232.659302,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+        <path d="m-0.791443,-0.360001l207.551163,0l0,204.342438l-207.551163,0l0,-204.342438z"/>
+      </svg>
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html#page2">Wat wij doen</a></li>
+          <li><a href="#">Wie wij zijn</a></li>
+          <li><a href="#page4">Wat wij deden</a></li>
+          <li><a href="contact_form.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+</div> <!--/Wrapper -->
+  <script src="classie.js"></script>
+  <script src="demo10.js"></script>
+</body>
+</html>
